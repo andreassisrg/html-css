@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias HTML</title>
+</head>
+<body>
+    <h1>Imagem Dinâmica</h1>
+    <p>Imagem que muda conforme o tamanho da janela</p>
+    <picture>
+        <source media="(max-width: 500px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 800px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível G">
+    </picture>
+    <h1>Áudios</h1>
+    <audio autoplay controls preload="metadata">
+        <source src="midia/High Noon - TrackTribe.mp3" type="audio/mpeg">
+        <source src="midia/High Noon - TrackTribe.mp3" type="audio/ogg"> <!--Pressupondo existência-->
+        <source src="midia/High Noon - TrackTribe.mp3" type="audio/wav"> <!--Pressupondo existência-->
+    </audio>
+</body>
+</html>

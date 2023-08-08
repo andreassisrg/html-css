@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-Elementos</title>
+    <style>
+        body{
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        a {
+            color: lightblue;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: blue;
+        }
+
+        a:hover {
+            color: brown;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        a::after {
+            content: ' [link]';
+            text-decoration: none;
+            color: black;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="https://www.youtube.com/" target="_blank" rel="external">YouTube</a></li>
+        <li><a href="https://www.google.com/" target="_blank" rel="external">Google</a></li>
+        <li><a href="https://www.github.com/" target="_blank" rel="external">GitHub</a></li>
+    </ul>
+</body>
+</html>
