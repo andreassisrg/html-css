@@ -107,3 +107,16 @@ footer > p {
     font-size: 0.9em;
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.39);
 }
+
+footer a {
+    text-decoration: none;
+    color: inherit;
+    padding: 2px;
+    margin: 2px;
+    border-radius: 2px;
+}
+
+footer a:hover {
+    color: black;
+    background-color: white;
+}
