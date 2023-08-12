@@ -21,6 +21,7 @@
     box-sizing: border-box;
 }
 
+html,
 body {
     background-color: var(--reseda-green);
 }
@@ -29,36 +30,36 @@ header {
     background-color: black;
     color: white;
     text-align: center;
-    padding: 30px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.425);
 }
 
 header > h1 {
     font-family: var(--display-font);
     font-size: 10em;
+    padding-top: 30px;
 }
 
-header small {
+header > p {
     font-family: var(--text-font);
     font-size: 1em;
+    padding-bottom: 30px;
 }
 
 main {
     font-family: var(--text-font);
     font-weight: 500;
+    line-height: 2em;
     background-color: rgba(255, 255, 255, 0.432);
     margin: 0px 40px;
     border-radius: 0 0 10px 10px;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.404);
 }
 
-.stanza {
-    max-width: 800px;
-    padding: 50px;
+section > p {
+    width: 10vh;
 }
 
-.stanza span {
-    display: inline-block;
+.stanza > p {
     padding: 20px;
     margin-bottom: 50px;
     font-size: 2.5em;
@@ -69,7 +70,7 @@ main {
     display: flex;
 }
 
-#second .stanza {
+#second  section {
     color: white;
     background-color: rgba(136, 136, 136, 0.685);
     border-radius: 10px;
@@ -98,7 +99,7 @@ main {
 footer {
     background-color: black;
     text-align: center;
-    padding: 3px;
+    padding: 5px;
     margin-top: 50px;
 }
 
