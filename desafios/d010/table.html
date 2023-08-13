@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 700px;
+            height: 100px;
+            margin: auto;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bolder;
+            padding: 10px;
+        }
+
+        thead th {
+            background-color: rgb(143, 142, 142);
+            font-weight: bold;
+            color: white;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        .disciplina {
+            text-align: left;
+        }
+
+        .media {
+            background-color: rgb(143, 142, 142);
+            color: white;
+            font-weight: bold;
+        }
+
+        .media > th {
+            text-align: left;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <caption>
+            Boletim
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col" rowspan="2">Área</td>
+                <th scope="col" rowspan="2">Disciplinas</td>
+                <th scope="colgroup" colspan="2">Notas</td>
+                <th scope="col" rowspan="2">Média</th>
+            </tr>
+            <tr>
+                <th scope="col">Nota 1</th>
+                <th scope="col">Nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="4">Exatas</td>
+                <td class="disciplina">Matemática</td>
+                <td>75</td>
+                <td>75</td>
+                <td>75</td>
+            </tr>
+            <tr>
+                <td class="disciplina">Física</td>
+                <td>70</td>
+                <td>80</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td class="disciplina">Química</td>
+                <td>60</td>
+                <td>80</td>
+                <td>70</td>
+            </tr>
+            <tr>
+                <td class="disciplina">Biologia</td>
+                <td>40</td>
+                <td>80</td>
+                <td>60</td>
+            </tr>
+            <tr class="media">
+                <th scope="row" colspan="4">Média de Exatas</th>
+                <td>75</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="2">Humanas</th>
+                <td class="disciplina">História</td>
+                <td>20</td>
+                <td>40</td>
+                <td>30</td>
+            </tr>
+            <tr>
+                <td class="disciplina">Geografia</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+            </tr>
+            <tr class="media">
+                <th scope="row" colspan="4">Média de Humanas</th>
+                <td>65</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
