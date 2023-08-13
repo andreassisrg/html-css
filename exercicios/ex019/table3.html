@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables Exercise</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 800px;
+            border-collapse: collapse;
+            margin: 20px;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>
+            Everyone's Favorite Movie
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Group</th>
+                <th scope="col">Name</th>
+                <th scope="colgroup" colspan="3">Movies</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Women</th>
+                <td>Anna</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Avengers</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Untouchable</td>
+            </tr>
+            <tr>
+                <td>Claudia</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="3">Men</th>
+                <td>Bruno</td>
+                <td>Batman</td>
+                <td>Amnesia</td>
+                <td>Gladiator</td>
+            </tr>
+            <tr>
+                <td>Daniel</td>
+                <td>Wall-e</td>
+                <td>Oldboy</td>
+                <td>Schindler's List</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>Star Wars 5</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
