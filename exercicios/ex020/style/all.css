@@ -35,6 +35,10 @@ img {
     margin: auto;
 }
 
+#phone {
+    display: block
+}
+
 #tablet,
 #pc,
 #tv,
